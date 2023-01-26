@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+
+    background: url("../bg2.jpg");
+    min-height: 100vh;
+    background-size: 110vw 110vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Fondamento', cursive;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Fondamento', cursive;
+}
+
+#board{
+
+    background: linear-gradient(rgb(93, 223, 93) , rgb(214, 214, 88));
+    width: 90vmin;
+    height: 92vmin;
+    border: solid rgb(189, 125, 6);
+    display: grid;
+    grid-template-rows: repeat(18 , 1fr);
+    grid-template-columns: repeat(18 , 1fr);    
+}
+
+.head{
+    background: linear-gradient(rgb(23, 164, 23) ,rgb(203, 60, 20) );
+    border: 2px solid purple;
+    border-radius: 8px;
+    transform: scale(1.02);
+}
+.snake{
+    background: linear-gradient(green , orange);
+    border: .25vmin solid rgb(69, 206, 44);
+    border-radius: 8px;
+}
+.food{
+    background: linear-gradient(rgb(37, 162, 37) , rgb(25, 146, 98) );
+    border: .25vmin solid rgb(132, 230, 71);
+    border-radius: 8px;
+}
